@@ -7,14 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "compile": "npx truffle compile",
-    "deploy": "npx truffle migrate --network nahmii",
-    "console": "npx truffle console --network nahmii",
+    "compile": "truffle compile --config truffle-config-nahmii.js",
+    "deploy": "truffle migrate --network optimism --config truffle-config-nahmii.js",
+    "deploy:nahmii": "truffle migrate --network ropsten --config truffle-config-nahmii.js",
+    "console": "truffle console --network optimism --config truffle-config-nahmii.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@eth-optimism/solc": "^0.5.16-alpha.6"
+    "@eth-optimism/solc": "^0.5.16-alpha.6",
+    "truffle": "^5.3.6",
+    "@truffle/hdwallet-provider": "^1.4.0"
   }
 }
