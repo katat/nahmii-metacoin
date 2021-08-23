@@ -1,0 +1,20 @@
+{
+  "name": "metacoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npx truffle compile",
+    "deploy": "npx truffle migrate --network nahmii",
+    "console": "npx truffle console --network nahmii",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eth-optimism/solc": "^0.5.16-alpha.6"
+  }
+}
